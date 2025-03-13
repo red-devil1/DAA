@@ -1,6 +1,6 @@
 #             Experiment No.—6 : String Pattern Matching 
 
-# Implement algorithms to find a pattern in a given string.  
+# Implement algorithms to find a pattern in a given string. 
 
 # Naive Pattern Search
 def naive_pattern_search(text, pattern):
