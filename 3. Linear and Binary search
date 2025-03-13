@@ -1,6 +1,6 @@
 #         Experiment No.—3 : Linear and Binary Search 
 
-# Implement linear and binary search algorithms on a list.  
+# Implement linear and binary search algorithms on a list. 
 
 #  Linear Search
 def linear_search(lst, target):
