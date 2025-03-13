@@ -1,0 +1,28 @@
+#             Experiment No.—10 : Dynamic Programming 
+
+# Implement algorithms for Fibonacci series and Longest Common Subsequence using dynamic programming. 
+
+# Fibonacci using dynamic programming
+def fibonacci(n):
+    dp = [0] * (n+1)
+    dp[1] = 1
+    for i in range(2, n+1):
+        dp[i] = dp[i-1] + dp[i-2]
+    return dp[n]
+
+# Longest Common Subsequence (LCS) using dynamic programming
+def lcs(X, Y):
+    m, n = len(X), len(Y)
+    dp = [[0] * (n+1) for _ in range(m+1)]
+
+    for i in range(1, m+1):
+        for j in range(1, n+1):
+            if X[i-1] == Y[j-1]:
+                dp[i][j] = dp[i-1][j-1] + 1
+            else:
+                dp[i][j] = max(dp[i-1][j], dp[i][j-1])
+    return dp[m][n]
+
+# Example usage:
+print("Fibonacci of 10:", fibonacci(10))
+print("LCS of 'AGGTAB' and 'GXTXAYB':", lcs("AGGTAB", "GXTXAYB"))
