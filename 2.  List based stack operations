@@ -1,6 +1,6 @@
 #            Experiment No.—2 : List-Based Stack Operations 
 
-#     Create a list-based stack and perform stack operations.  
+#     Create a list-based stack and perform stack operations. 
 
 class Stack:
     def __init__(self):
