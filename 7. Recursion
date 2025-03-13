@@ -1,6 +1,6 @@
 #             Experiment No.—7 : Recursion 
 
-# Implement recursive algorithms (e.g., factorial, Fibonacci, Tower of Hanoi).  
+# Implement recursive algorithms (e.g., factorial, Fibonacci, Tower of Hanoi). 
 
 # Factorial using recursion
 def factorial(n):
