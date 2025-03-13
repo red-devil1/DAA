@@ -1,6 +1,6 @@
 #             Experiment No.—10 : Dynamic Programming 
 
-# Implement algorithms for Fibonacci series and Longest Common Subsequence using dynamic programming. 
+# Implement algorithms for Fibonacci series and Longest Common Subsequence using dynamic programming.
 
 # Fibonacci using dynamic programming
 def fibonacci(n):
