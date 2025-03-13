@@ -1,6 +1,6 @@
 #             Experiment No.—9 : Divide and Conquer 
 
-# Implement algorithms like merge sort and Strassen's Matrix Multiplication.  
+# Implement algorithms like merge sort and Strassen's Matrix Multiplication.
 
 # Merge Sort Algorithm
 def merge_sort(arr):
