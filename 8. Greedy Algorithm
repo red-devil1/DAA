@@ -1,0 +1,30 @@
+#             Experiment No.—8 : Greedy Algorithm 
+
+# Solve problems like file merging and coin change using the Greedy Algorithm.  
+
+import heapq
+
+# File Merging (Optimal Merge Pattern)
+def file_merging(files):
+    heapq.heapify(files)
+    cost = 0
+    while len(files) > 1:
+        cost += heapq.heappop(files) + heapq.heappop(files)
+        heapq.heappush(files, sum(heapq.nsmallest(2, files)))
+    return cost
+
+# Coin Change Problem
+def coin_change(coins, amount):
+    count = 0
+    for coin in sorted(coins, reverse=True):
+        count += amount // coin
+        amount %= coin
+    return count if amount == 0 else -1
+
+# Example usage:
+files = [4,8,6,12,10]
+print("File merging cost:", file_merging(files))
+
+coins = [1,5,10,25]
+print("Min Coins:", coin_change(coins, 63))
+
