@@ -1,6 +1,6 @@
 #             Experiment No.—8 : Greedy Algorithm 
 
-# Solve problems like file merging and coin change using the Greedy Algorithm.
+# Solve problems like file merging and coin change using the Greedy Algorithm. 
 
 import heapq
 
