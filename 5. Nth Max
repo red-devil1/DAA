@@ -1,6 +1,6 @@
 #             Experiment No.—5 : Nth Max/Min Element 
 
-# Implementation of Algorithms to Find the Nth Maximum or Minimum Element in a List 
+# Implementation of Algorithms to Find the Nth Maximum or Minimum Element in a List.
 
 
 def nth_max_min(lst, n, find_max=True):
