@@ -1,0 +1,41 @@
+#           Experiment No.—1 : Array Operations
+
+# Implement programs for 1-d arrays, Implement programs for 2-d arrays.   
+
+# 1. 1-D Array Operations
+
+def one_d_array_operations():
+    arr_1d = [10,20,30,40,50]
+    print("1-D Array:", arr_1d)
+    print("Sum:", sum(arr_1d))
+    arr_1d.reverse()
+    print("Reversed array:", arr_1d)
+    print("Max:", max(arr_1d), "Min:", min(arr_1d))
+    print("Element 3 found:",3 in arr_1d)
+
+    # 2-D Array Operations
+def two_d_array_operations():
+    arr_2d = [[1,2,3],[4,5,6],[7,8,9]]
+    print("\n2-D Array:")
+    for row in arr_2d:
+        print(row)
+    print("Sum:", sum(sum(row) for row in arr_2d))
+    print("Transpose:")
+    for row in zip(*arr_2d):
+        print(row)
+    print("Max:", max(max(row) for row in arr_2d))
+    arr_2d_1 = [[1,2],[3,4]]
+    arr_2d_2 = [[5,6],[7,8]]
+    result = [[sum(a*b for a,b in zip(row,col)) for col in zip(*(arr_2d))] for row in arr_2d]
+    print("Matrix product:",result)
+    print("Element 5 found:", any(5 in row for row in arr_2d))
+
+    # Main function to call the above functions
+def main():
+    one_d_array_operations()
+    two_d_array_operations()
+
+    # Execute the program
+if __name__ == "__main__":
+    main()
+    
