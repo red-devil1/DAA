@@ -1,0 +1,25 @@
+#             Experiment No.—6 : String Pattern Matching 
+
+# Implement algorithms to find a pattern in a given string.  
+
+# Naive Pattern Search
+def naive_pattern_search(text, pattern):
+    for i in range(len(text) - len(pattern)+1):
+        if text[i:i+len(pattern)] == pattern:
+            return i
+    return -1
+
+# Built-in Python String Method
+def python_pattern_search(text, pattern):
+    return text.find(pattern)
+
+# Example usage:
+text = "Hello world"
+pattern = "world"
+
+# Using Naive Search
+print("Naive Search Result:", naive_pattern_search(text, pattern))
+
+# Using Python's find method
+print("Python Find Method Result:", python_pattern_search(text, pattern))
+
